@@ -19,11 +19,3 @@ jQuery(window).scroll(function () {
         jQuery("#backtotop").removeClass("visible");
     }
 });
-
-
-
-jQuery("#sliders").click(function () {
-    jQuery("body,html").animate({
-        scrollTop: 1170
-    }, 600);
-});
