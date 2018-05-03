@@ -13,6 +13,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
     <link href="slider.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="css/modal-video.min.css">
     </head>
     <body id="top">
 <!-- ################################################################################################ -->
@@ -30,13 +31,10 @@ Licence URI: http://www.os-templates.com/template-terms
       <nav id="mainav" class="fl_right" style="margin-top: 27px;">
         <ul class="clear">
           <li><a href="index.html">Home</a></li>
-          <li><a class="drop" href="#">Pages</a>
+          <li><a class="drop" href="#">Serviços</a>
             <ul>
-              <li><a href="pages/gallery.html">Gallery</a></li>
-              <li><a href="pages/full-width.html">Full Width</a></li>
-              <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
-              <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
-              <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+              <li><a class="js-modal-btn" data-video-id="v=2Rb-NAZ7VAY">Pinturas Mecanizadas</a></li>
+              <li><a class="js-modal-btnn" data-video-id='2Rb-NAZ7VAY'>Lixamento isento de pó</a></li>
             </ul>
           </li>
           <li><a class="drop" href="#">Dropdown</a>
@@ -74,14 +72,14 @@ Licence URI: http://www.os-templates.com/template-terms
         </li>
         <li>
           <article>
-            <h3 class="heading">ALGUMA OUTRA COISA SOBRE SATOR PINTURAS</h3>
-            <footer><a class="btn inverse" href="#">algum baguio no botao</a></footer>
+            <h3 class="heading">Pinturas Mecanizadas</h3>
+            <footer><a class="btn inverse" href="#">Veja Mais</a></footer>
           </article>
         </li>
         <li>
           <article>
-            <h3 class="heading">OUTRA COISA SOBRE SATOR PINTURAS</h3>
-            <footer><a class="btn" href="#">algum baguio no botao</a></footer>
+            <h3 class="heading">Lixamento isento de pó</h3>
+            <footer><a class="btn" href="#">Clique para ver mais</a></footer>
           </article>
         </li>
       </ul>
@@ -126,7 +124,7 @@ Licence URI: http://www.os-templates.com/template-terms
             <h6 class="heading">Fácil contato</h6>
             <p>Contato direto com o responsável pela obra, garantindo o melhor serviço.&hellip;</p>
           </div>
-          <footer><a href="#">Contate-nos &raquo;</a></footer>
+          <footer><a href="#copyright">Contate-nos &raquo;</a></footer>
         </article>
       </li>
     </ul>
@@ -232,5 +230,21 @@ Licence URI: http://www.os-templates.com/template-terms
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
 <script src="layout/scripts/jquery.flexslider-min.js"></script>
 <script src="functions.js"></script>
+<script src="js/jquery-modal-video.min.js"></script>
+<script>
+    $(".js-modal-btn").modalVideo({
+      youtube:{
+        controls:0,
+        nocookie: true
+      }
+    });
+
+     $(".js-modal-btnn").modalVideo({
+      youtube:{
+        controls:0,
+        nocookie: true
+      }
+    });
+  </script>
 </body>
 </html>
