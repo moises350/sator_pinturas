@@ -33,33 +33,25 @@ Licence URI: http://www.os-templates.com/template-terms
           <li><a href="index.html">Home</a></li>
           <li><a class="drop" href="#">Serviços</a>
             <ul>
-              <li><a class="js-modal-btn" data-video-id="v=2Rb-NAZ7VAY">Pinturas Mecanizadas</a></li>
-              <li><a class="js-modal-btnn" data-video-id='2Rb-NAZ7VAY'>Lixamento isento de pó</a></li>
+              <li><a id="btnModalMecanizada">Pinturas Mecanizadas</a></li>
+              <li><a id="btnModalIsentoPo">Lixamento isento de pó</a></li>
             </ul>
           </li>
-          <li><a class="drop" href="#">Dropdown</a>
-            <ul>
-              <li><a href="#">Level 2</a></li>
-              <li><a class="drop" href="#">Level 2 + Drop</a>
-                <ul>
-                  <li><a href="#">Level 3</a></li>
-                  <li><a href="#">Level 3</a></li>
-                  <li><a href="#">Level 3</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Level 2</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Link Text</a></li>
-          <li><a href="#">Link Text</a></li>
         </ul>
       </nav>
       <!-- ################################################################################################ -->
     </header>
   </div>
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
+  <!-- MODAL-->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <div  style="justify-content: center; display: flex;" class="modal-body">
+        <iframe frameborder="0" id="pinturaMecanizada" allow="autoplay; encrypted-media"  width="78%;" height="500" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- fim MODAL-->
   <div id="pageintro" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <div class="flexslider basicslider">
@@ -67,7 +59,7 @@ Licence URI: http://www.os-templates.com/template-terms
         <li>
           <article>
             <h3 class="heading">As melhores soluções de pinturas pra você</h3>
-            <footer><a class="btn" href="#sliders">Veja nossos serviços</a></footer>
+            <footer><button class="btn" onclick="scrollToElement('#nossoServicos');">Veja nossos serviços</button></footer>
           </article>
         </li>
         <li>
@@ -124,7 +116,7 @@ Licence URI: http://www.os-templates.com/template-terms
             <h6 class="heading">Fácil contato</h6>
             <p>Contato direto com o responsável pela obra, garantindo o melhor serviço.&hellip;</p>
           </div>
-          <footer><a href="#copyright">Contate-nos &raquo;</a></footer>
+          <footer><a id="contateNos">Contate-nos &raquo;</a></footer>
         </article>
       </li>
     </ul>
@@ -137,40 +129,33 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper row3" style="text-align: center;">
-<div id="sliders" style="background-color: #26272B; max-height: 770px;">
+<div id="nossoServicos" style="background-color: #26272B; max-height: 770px;">
   <section class="hoc container clear"> 
-    <div class="slideshow-container">
-
-
     <div style="top: -40px; position: relative; "><h3 class="nospace" style="color: #dddddd;"><b>NOSSOS SERVIÇOS</b></h3></div>
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <img src="images/demo/triax/triax-inside.jpg" style="width:100%">
-    <div style="color: white;" class="text"><b>Academia TriaX </b></div>
-  </div>
+    <div id="sliders" class="slideshow-container">
 
-  <div class="mySlides fade">
-    <img src="images/demo/dompedro/shop-dom-pedro.jpg" style="width:100%; height: 562px;">
-    <div style="color: white;" class="text"><b>Shopping Dom Pedro</b></div>
-  </div>
+      <div class="mySlides fade">
+        <img src="images/demo/triax/triax-inside.jpg" style="width:100%">
+        <div style="color: white;" class="text"><b>Academia TriaX </b></div>
+      </div>
 
-  <div class="mySlides fade">
-    <img src="images/demo/residencias/sator-pinturass.jpg" style="width:100%; height: 562px;">
-    <div style="color: white;" class="text"><b>Residencial</b></div>
-  </div>
-</div>
-  <!-- Next and previous buttons -->
+      <div class="mySlides fade">
+        <img src="images/demo/dompedro/shop-dom-pedro.jpg" style="width:100%; height: 562px;">
+        <div style="color: white;" class="text"><b>Shopping Dom Pedro</b></div>
+      </div>
 
-  <div style="text-align:center; position: relative; bottom: -30px; text-align: center;">
+      <div class="mySlides fade">
+        <img src="images/demo/residencias/sator-pinturass.jpg" style="width:100%; height: 562px;">
+        <div style="color: white;" class="text"><b>Residencial</b></div>
+      </div>
+    </div>
+
+  <div class="slides" style="text-align:center; position: relative; bottom: -30px; text-align: center;">
       <span class="dot" onclick="currentSlide(1)"></span> 
       <span class="dot" onclick="currentSlide(2)"></span> 
       <span class="dot" onclick="currentSlide(3)"></span> 
    </div>
 </div>
-
-<!-- The dots/circles -->
-
-    <!-- ################################################################################################ -->
   </section>
 </div>
 <!-- ################################################################################################ -->
@@ -190,20 +175,21 @@ Licence URI: http://www.os-templates.com/template-terms
   <footer id="footer" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <div class="one_third first">
-      <h3 class="heading">Sator Pinturas</h3>
+      <h3 style="margin-left: -31px;" class="heading"><img src="images/demo/backgrounds/SatorLogo.png"/></h3>
       <ul class="faico clear">
-        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
-        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+        
       </ul>
     </div>
     <div class="one_third" style="float: right;">
       <ul class="nospace meta">
-        <li class="btmspace-15"><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
-        <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
+        <li class="btmspace-15"><i class="fa fa-phone"></i> +55 (019) 9 9251-2693</li>
+        <li class="btmspace-15"><i class="fa fa-envelope-o"></i> satorpinturas@bol.com.br</li>
+        <li>
+          <a style="color: #A6A6A6;   text-decoration: none;" class="faicon-facebook" target="_blank" href="https://www.facebook.com/satorpinturas/">
+            <i style="color: #A6A6A6;" class="fa fa-facebook-square"></i>
+            Sator Pinturas
+          </a>
+        </li>
       </ul>
     </div>
     <!-- ################################################################################################ -->
@@ -215,7 +201,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <div class="wrapper row5">
   <div id="copyright" class="hoc clear"> 
     <!-- ################################################################################################ -->
-    <p class="fl_left">Copyright &copy; 2016 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_left">Copyright &copy; 2018 - Todos os direitos reservados</p>
     <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
     <!-- ################################################################################################ -->
   </div>
@@ -229,22 +215,48 @@ Licence URI: http://www.os-templates.com/template-terms
 <script src="layout/scripts/jquery.backtotop.js"></script>
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
 <script src="layout/scripts/jquery.flexslider-min.js"></script>
+<script src="js/utilIndex.js"></script>
 <script src="functions.js"></script>
-<script src="js/jquery-modal-video.min.js"></script>
 <script>
-    $(".js-modal-btn").modalVideo({
-      youtube:{
-        controls:0,
-        nocookie: true
-      }
-    });
 
-     $(".js-modal-btnn").modalVideo({
-      youtube:{
-        controls:0,
-        nocookie: true
-      }
-    });
+var modal = document.getElementById('myModal');
+var btnPinturaMecanizada = document.getElementById("btnModalMecanizada");
+var btnIsentoDePo = document.getElementById("btnModalIsentoPo");
+var fecharModal = document.getElementsByClassName("close")[0];
+
+btnPinturaMecanizada.onclick = function() 
+{
+    modal.style.display = "block";
+    $("#pinturaMecanizada").attr("src","https://www.youtube.com/embed/2Rb-NAZ7VAY?autoplay=1&rel=0");
+}
+
+btnIsentoDePo.onclick = function() 
+{
+    modal.style.display = "block";
+    $("#pinturaMecanizada").attr("src","https://www.youtube.com/embed/StijcntAsLQ?autoplay=1&rel=0");
+}
+
+fecharModal.onclick = function() 
+{
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) 
+{
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+$( document ).ready(function() {
+  $("#closeModal, #myModal").click(stopVideo);
+  $("#contateNos").click(function(){
+    scrollToElement('#footer');
+  });
+  initSliders();
+
+});
+
   </script>
 </body>
 </html>
