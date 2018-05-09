@@ -12,12 +12,9 @@ Licence URI: http://www.os-templates.com/template-terms
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-    <link href="slider.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="stylesheet" href="css/modal-video.min.css">
+    <link href="css/slider.css" rel="stylesheet" type="text/css" media="all">
     </head>
     <body id="top">
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- Top Background Image Wrapper -->
 <div class="bgded overlay" style="background-image:url('images/demo/header-logo.jpg');"> 
@@ -59,19 +56,19 @@ Licence URI: http://www.os-templates.com/template-terms
         <li>
           <article>
             <h3 class="heading">As melhores soluções de pinturas pra você</h3>
-            <footer><button class="btn" onclick="scrollToElement('#nossoServicos');">Veja nossos serviços</button></footer>
+            <footer><button style="background-color: green;" class="btn" onclick="scrollToElement('#nossoServicos');">Veja nossos serviços</button></footer>
           </article>
         </li>
         <li>
           <article>
             <h3 class="heading">Pinturas Mecanizadas</h3>
-            <footer><a class="btn inverse" href="#">Veja Mais</a></footer>
+            <footer><a style="background-color: green;" class="btn inverse" href="#">Veja Mais</a></footer>
           </article>
         </li>
         <li>
           <article>
             <h3 class="heading">Lixamento isento de pó</h3>
-            <footer><a class="btn" href="#">Clique para ver mais</a></footer>
+            <footer><a style="background-color: green; color: white;" class="btn" href="#">Clique para ver mais</a></footer>
           </article>
         </li>
       </ul>
@@ -155,8 +152,8 @@ Licence URI: http://www.os-templates.com/template-terms
       <span class="dot" onclick="currentSlide(2)"></span> 
       <span class="dot" onclick="currentSlide(3)"></span> 
    </div>
-</div>
   </section>
+</div>
 </div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -216,7 +213,6 @@ Licence URI: http://www.os-templates.com/template-terms
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
 <script src="layout/scripts/jquery.flexslider-min.js"></script>
 <script src="js/utilIndex.js"></script>
-<script src="functions.js"></script>
 <script>
 
 var modal = document.getElementById('myModal');
@@ -248,7 +244,7 @@ window.onclick = function(event)
     }
 }
 
-$( document ).ready(function() {
+$( document ).ready(function(){
   $("#closeModal, #myModal").click(stopVideo);
   $("#contateNos").click(function(){
     scrollToElement('#footer');
