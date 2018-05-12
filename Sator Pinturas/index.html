@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="css/lib/layout.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/lib/slider.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/lib/slick.css" rel="stylesheet" type="text/css"/>
     <link href="css/lib/slick-theme.css" rel="stylesheet" type="text/css"/>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
@@ -33,15 +32,55 @@
     </header>
   </div>
   <!-- MODAL-->
-  <div id="myModal" class="modal">
+
+  <div id="modalTecnologias" class="modal">
     <div class="modal-content">
       <span id="closeModal" class="close">&times;</span>
       <div  style="justify-content: center; display: flex;" class="modal-body">
-        <iframe frameborder="0" id="pinturaMecanizada" allow="autoplay; encrypted-media" width="78%;" height="500" allowfullscreen></iframe>
+        <iframe frameborder="0" id="iframeVideo" allow="autoplay; encrypted-media" width="78%;" height="500" allowfullscreen></iframe>
       </div>
     </div>
   </div>
+
   <!-- fim MODAL-->
+
+  <!-- MODAL VIDEO -->
+
+  <div id="modalGaleria" class="modal">
+    <div class="modal-content">
+      <span id="closeGaleria" class="close">&times;</span>
+      <div  style="justify-content: center; display: flex;" class="modal-body">
+        <div class="slider-servicos">
+
+          <div class="item">
+            <div class="slider-img-wrapper">
+              <img src="img/slider/triax-inside2.jpg">
+            </div>
+            <h2>Academia TriaX</h2>
+          </div>
+
+          <div class="item">
+            <div class="slider-img-wrapper">
+              <img src="img/slider/shop-dom-pedro.jpg">
+            </div>
+            <h2>Shopping Dom Pedro</h2>
+          </div>
+
+          <div class="item">
+            <div class="slider-img-wrapper">
+              <img src="img/slider/sator-pinturass.jpg">
+            </div>
+            <h2>Residencial</h2>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- fim MODAL-->
+
+
   <div id="pageintro" class="hoc clear"> 
     <div class="flexslider basicslider">
       <ul class="slides">
@@ -107,13 +146,13 @@
 </div>
 <!-- ################################################################################################ -->
 <div class="wrapper row3" style="text-align: center;">
-<div id="nossoServicos" style="background-color: #26272B; max-height: 770px;">
+<div id="nossoServicos" style="background-color: #26272B;">
   <section class="hoc container clear"> 
     <div>
       <h3 class="btmspace-50" style="color: #dddddd;"><b>NOSSOS SERVIÇOS</b></h3>
     </div>
 
-    <div class="slider-servicos">
+    <!--<div class="slider-servicos">
 
       <div class="item">
         <div class="slider-img-wrapper">
@@ -136,6 +175,70 @@
         <h2>Residencial</h2>
       </div>
 
+    </div>-->
+    <div>
+
+      <div data-id="0" class="first card-servicos one_quarter">
+        <div class="card-img-wrapper">
+          <img src="content/2018-05-10/1.jpg" alt="" />
+        </div>
+        <h2>(?)</h2>
+        <h3>(?)</h3>
+      </div>
+      <div data-id="1" class="card-servicos one_quarter">
+        <div class="card-img-wrapper">
+          <img src="content/2017-12-11/3.jpg" alt="" />
+        </div>
+        <h2>(?)</h2>
+        <h3>(?)</h3>
+      </div>
+      <div data-id="2" class="card-servicos one_quarter">
+        <div class="card-img-wrapper">
+          <img src="content/2017-07-19/3.jpg" alt="" />
+        </div>
+        <h2>Academia Triax</h2>
+        <h3>Cosmópolis</h3>
+      </div>
+      <div data-id="3" class="card-servicos one_quarter">
+        <div class="card-img-wrapper">
+          <img src="content/2014-01-26/1.jpg" alt="" />
+        </div>
+        <h2>Parking Kids</h2>
+        <h3>Shopping Dom Pedro</h3>
+      </div>
+
+      <div data-id="4" class="first card-servicos one_quarter">
+        <div class="card-img-wrapper">
+          <img src="content/2014-09-26/1.jpg" alt="" />
+        </div>
+        <h2>Condomínio Duas Marias</h2>
+        <h3>Holambra</h3>
+      </div>
+      <div data-id="5" class="card-servicos one_quarter">
+        <div class="card-img-wrapper">
+          <img src="content/2014-12-21/2.jpg" alt="" />
+        </div>
+        <h2>Templo (?)</h2>
+        <h3>(?)</h3>
+      </div>
+      <div data-id="6" class="card-servicos one_quarter">
+        <div class="card-img-wrapper">
+          <img src="content/2016-03-08/3.jpg" alt="" />
+        </div>
+        <h2>Condomínio Monte Cristo</h2>
+        <h3>Cosmópolis</h3>
+      </div>
+      <div data-id="7" class="card-servicos one_quarter">
+        <div class="card-img-wrapper">
+          <img src="content/2014-01-24/10.jpg" alt="" />
+        </div>
+        <h2>Condomínio Espaço Verde</h2>
+        <h3>Barão Geraldo</h3>
+      </div>
+
+      <div>
+        <a class="btn btn-veja-mais" href="#">Veja mais</a>
+      </div>
     </div>
 
   </section>
@@ -187,28 +290,51 @@
 <script type="text/javascript" src="js/lib/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="js/lib/slick.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/bd.js"></script>
 <script>
 
   $(document).ready(function(){
-    $('.slider-servicos').slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      fade: true,
-      autoplay: true,
-      autoplaySpeed: 3000,    
-      cssEase: 'linear'
-    });
+    initSlick();
 
-    $("#closeModal, #myModal").click(stopVideo);
+    $("#closeModal, #modalTecnologias").click(stopVideo);
 
     $(".contate-nos").click(function(){
       scrollToElement('#footer');
     });
 
+    $("#closeGaleria").click(function () {
+        $("#modalGaleria").hide();
+    });
+
+    $(".card-servicos").click(function() {
+      var id = $(this).data("id");
+
+      $('.slider-servicos').slick('unslick');
+      $(".slider-servicos").empty();
+
+      for (var i = 0; i < data.galerias[id].fotos.length; i++) {
+
+        var foto = data.galerias[id].fotos[i];
+
+        var item = "<div class='item'>"
+                 + "  <div class='slider-img-wrapper'>"
+                 + "    <img src='" + foto.url + "'>"
+                 + "  </div>"
+                 + "  <h2>" + foto.legenda + "</h2>"
+                 + "</div>";
+
+        $(".slider-servicos").append(item);
+
+        $("#modalGaleria").show();
+      }
+
+      initSlick();
+
+    });
+
   });
 
-	var modal = document.getElementById('myModal');
+	var modal = document.getElementById('modalTecnologias');
 	var btnPinturaMecanizada = document.getElementById("btnModalMecanizada");
 	var btnIsentoDePo = document.getElementById("btnModalIsentoPo");
 	var fecharModal = document.getElementsByClassName("close")[0];
@@ -216,13 +342,13 @@
 	btnPinturaMecanizada.onclick = function() 
 	{
 		modal.style.display = "block";
-		$("#pinturaMecanizada").attr("src","https://www.youtube.com/embed/2Rb-NAZ7VAY?autoplay=1&rel=0");
+		$("#iframeVideo").attr("src","https://www.youtube.com/embed/2Rb-NAZ7VAY?autoplay=1&rel=0");
 	}
 
 	btnIsentoDePo.onclick = function() 
 	{
 		modal.style.display = "block";
-		$("#pinturaMecanizada").attr("src","https://www.youtube.com/embed/StijcntAsLQ?autoplay=1&rel=0");
+		$("#iframeVideo").attr("src","https://www.youtube.com/embed/StijcntAsLQ?autoplay=1&rel=0");
 	}
 
 	fecharModal.onclick = function() 
@@ -236,6 +362,18 @@
 			modal.style.display = "none";
 		}
 	}
+
+  function initSlick() {
+    $('.slider-servicos').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      autoplay: true,
+      autoplaySpeed: 3000,    
+      cssEase: 'linear'
+    });
+  }
 
 </script>
 </body>

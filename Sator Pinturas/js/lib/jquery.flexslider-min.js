@@ -23,7 +23,7 @@ $('.basicslider').flexslider({
 	pauseOnHover: true,
 	controlNav: true,
 	directionNav: false,
-	smoothHeight: true,
+	smoothHeight: false,
 	start: function(slider) {
 		$('body').removeClass('loading');
 	}
