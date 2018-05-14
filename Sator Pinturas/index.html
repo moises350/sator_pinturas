@@ -17,13 +17,13 @@
       <div style="width: 40%; float: left; margin: 0px;" id="logo" class="fl_left">
         <h1><a href="index.html"><img src="img/SatorLogo.png"/></a></h1>
       </div>
-      <nav id="mainav" class="fl_right" style="margin-top: 27px;">
+      <nav id="mainav" class="fl_right">
         <ul class="clear">
           <li><a href="index.html">Home</a></li>
           <li><a class="drop" href="#">Serviços</a>
             <ul>
-              <li><a id="btnModalMecanizada">Pinturas Mecanizadas</a></li>
-              <li><a id="btnModalIsentoPo">Lixamento isento de pó</a></li>
+              <li><a id="btnModalVideo1">Pinturas Mecanizadas</a></li>
+              <li><a id="btnModalVideo2">Lixamento isento de pó</a></li>
             </ul>
           </li>
           <li><a class="contate-nos">Contato</a></li>
@@ -35,9 +35,9 @@
 
   <div id="modalTecnologias" class="modal">
     <div class="modal-content">
-      <span id="closeModal" class="close">&times;</span>
+      <span id="closeModalTecnologias" class="close">&times;</span>
       <div  style="justify-content: center; display: flex;" class="modal-body">
-        <iframe frameborder="0" id="iframeVideo" allow="autoplay; encrypted-media" width="78%;" height="500" allowfullscreen></iframe>
+        <iframe frameborder="0" id="videoTecnologias" allow="autoplay; encrypted-media" width="78%;" height="500" allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -72,7 +72,6 @@
             </div>
             <h2>Residencial</h2>
           </div>
-
         </div>
       </div>
     </div>
@@ -113,12 +112,12 @@
       <h3 class="nospace"><b>Visão</b></h3>
       <p class="nospace">Sator Pinturas sempre inovando e satisfazendo seus clientes.</p>
     </div>
-    <ul class="nospace group services">
+    <ul class="nospace group services z-index-fix">
       <li class="one_third first active">
         <article class="bgded overlay" style="background-image:url('img/template/background-article.jpg');">
           <div class="txtwrap"><i class="block fa fa-4x fa-paint-brush"></i>
             <h6 class="heading">Satisfação</h6>
-            <p>Sempre ligado diretamente ao cliente e com a sua satisfação.</p>
+            <p>Visando sempre a satisfação do cliente. Ótimo atendimento.</p>
           </div>
         </article>
       </li>
@@ -126,9 +125,9 @@
         <article class="bgded overlay" style="background-image:url('img/template/business-img.jpg');">
           <div class="txtwrap"><i class="block fa fa-4x fa-thumbs-up"></i> 
             <h6 class="heading">Preços amigáveis</h6>
-            <p>Os melhores preços com a melhor qualidade de serviço.</p>
+            <p>Os melhores preços da região. Faça já o seu orçamento, sem compromisso!</p>
           </div>
-          <footer><a href="#">Saiba mais &raquo;</a></footer>
+          <footer><a href="#" style="display: none;">Saiba mais &raquo;</a></footer>
         </article>
       </li>
       <li class="one_third active">
@@ -151,86 +150,85 @@
     <div>
       <h3 class="btmspace-50" style="color: #dddddd;"><b>NOSSOS SERVIÇOS</b></h3>
     </div>
-
-    <!--<div class="slider-servicos">
-
-      <div class="item">
-        <div class="slider-img-wrapper">
-          <img src="img/slider/triax-inside2.jpg">
-        </div>
-        <h2>Academia TriaX</h2>
-      </div>
-
-      <div class="item">
-        <div class="slider-img-wrapper">
-          <img src="img/slider/shop-dom-pedro.jpg">
-        </div>
-        <h2>Shopping Dom Pedro</h2>
-      </div>
-
-      <div class="item">
-        <div class="slider-img-wrapper">
-          <img src="img/slider/sator-pinturass.jpg">
-        </div>
-        <h2>Residencial</h2>
-      </div>
-
-    </div>-->
-    <div>
+    <div id="containerServicos">
 
       <div data-id="0" class="first card-servicos one_quarter">
-        <div class="card-img-wrapper">
-          <img src="content/2018-05-10/1.jpg" alt="" />
+        <div class="card-img">
+          <div class="card-img-wrapper">
+            <img src="content/2018-05-10/1.jpg" alt="" />
+          </div>
+          <div class="card-img-overlay">5 FOTOS</div>
         </div>
         <h2>(?)</h2>
         <h3>(?)</h3>
       </div>
       <div data-id="1" class="card-servicos one_quarter">
-        <div class="card-img-wrapper">
-          <img src="content/2017-12-11/3.jpg" alt="" />
+        <div class="card-img">
+          <div class="card-img-wrapper">
+            <img src="content/2017-12-11/1.jpg" alt="" />
+          </div>
+          <div class="card-img-overlay">3 FOTOS</div>
         </div>
         <h2>(?)</h2>
         <h3>(?)</h3>
       </div>
       <div data-id="2" class="card-servicos one_quarter">
-        <div class="card-img-wrapper">
-          <img src="content/2017-07-19/3.jpg" alt="" />
+        <div class="card-img">
+          <div class="card-img-wrapper">
+            <img src="content/2017-07-19/1.jpg" alt="" />
+          </div>
+          <div class="card-img-overlay">10 FOTOS</div>
         </div>
         <h2>Academia Triax</h2>
         <h3>Cosmópolis</h3>
       </div>
       <div data-id="3" class="card-servicos one_quarter">
-        <div class="card-img-wrapper">
-          <img src="content/2014-01-26/1.jpg" alt="" />
+        <div class="card-img">
+          <div class="card-img-wrapper">
+            <img src="content/2014-01-26/1.jpg" alt="" />
+          </div>
+          <div class="card-img-overlay">2 FOTOS</div>
         </div>
         <h2>Parking Kids</h2>
         <h3>Shopping Dom Pedro</h3>
       </div>
 
       <div data-id="4" class="first card-servicos one_quarter">
-        <div class="card-img-wrapper">
-          <img src="content/2014-09-26/1.jpg" alt="" />
+        <div class="card-img">
+          <div class="card-img-wrapper">
+            <img src="content/2014-09-26/1.jpg" alt="" />
+          </div>
+          <div class="card-img-overlay">2 FOTOS</div>
         </div>
         <h2>Condomínio Duas Marias</h2>
         <h3>Holambra</h3>
       </div>
       <div data-id="5" class="card-servicos one_quarter">
-        <div class="card-img-wrapper">
-          <img src="content/2014-12-21/2.jpg" alt="" />
+        <div class="card-img">
+          <div class="card-img-wrapper">
+            <img src="content/2014-12-21/1.jpg" alt="" />
+          </div>
+          <div class="card-img-overlay">8 FOTOS</div>
         </div>
         <h2>Templo (?)</h2>
         <h3>(?)</h3>
       </div>
       <div data-id="6" class="card-servicos one_quarter">
-        <div class="card-img-wrapper">
-          <img src="content/2016-03-08/3.jpg" alt="" />
+        <div class="card-img">
+          <div class="card-img-wrapper">
+            <img src="content/2016-03-08/1.jpg" alt="" />
+          </div>
+          <div class="card-img-overlay">7 FOTOS</div>
         </div>
         <h2>Condomínio Monte Cristo</h2>
         <h3>Cosmópolis</h3>
       </div>
       <div data-id="7" class="card-servicos one_quarter">
-        <div class="card-img-wrapper">
-          <img src="content/2014-01-24/10.jpg" alt="" />
+        <div class="card-img">
+          <div class="card-img-wrapper">
+            <img src="content/2014-01-24/1.jpg" alt="" />
+          </div>
+          <div class="card-img-overlay">11 FOTOS</div>
         </div>
         <h2>Condomínio Espaço Verde</h2>
         <h3>Barão Geraldo</h3>
@@ -239,6 +237,7 @@
       <div>
         <a class="btn btn-veja-mais" href="#">Veja mais</a>
       </div>
+
     </div>
 
   </section>
@@ -252,7 +251,7 @@
 </iframe>
 </div>
 
-<div class="wrapper row4 bgded overlay" style="background-color:#26272b ;">
+<div class="wrapper row4 bgded overlay z-index-fix" style="background-color:#26272b ;">
   <footer id="footer" class="hoc clear"> 
     <div class="one_third first">
       <h3 style="margin-left: -31px;" class="heading"><img src="img/SatorLogo.png"/></h3>
@@ -260,7 +259,8 @@
         
       </ul>
     </div>
-    <div class="one_third" style="float: right;">
+    <div id="footerContato" class="one_third">
+      <h2 id="titleContato">CONTATO</h2>
       <ul class="nospace meta">
         <li class="btmspace-15"><i class="fa fa-phone"></i> (19) 99251-2693</li>
         <li class="btmspace-15"><i class="fa fa-envelope-o"></i> satorpinturas@bol.com.br</li>
@@ -277,7 +277,7 @@
 <!-- ################################################################################################ -->
 <div class="wrapper row5">
   <div id="copyright" class="hoc clear"> 
-    <p class="fl_left">Copyright &copy; 2018 - Todos os direitos reservados</p>
+    <p class="fl_left">Copyright &copy; <span id="labelAno"></span> - Todos os direitos reservados</p>
     <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
   </div>
 </div>
@@ -296,14 +296,42 @@
   $(document).ready(function(){
     initSlick();
 
-    $("#closeModal, #modalTecnologias").click(stopVideo);
+    $("#labelAno").append((new Date()).getFullYear());
 
     $(".contate-nos").click(function(){
       scrollToElement('#footer');
+      $("#footerContato").css("background", "#292929");
+
+      setTimeout(function () {
+        $("#footerContato").css("background", "");
+      }, 700);
+
     });
 
     $("#closeGaleria").click(function () {
-        $("#modalGaleria").hide();
+      $("#modalGaleria").hide();
+    });
+
+    $("#btnModalVideo1").click(function () {
+      $("#videoTecnologias").attr("src","https://www.youtube.com/embed/2Rb-NAZ7VAY?autoplay=1&rel=0");
+      $("#modalTecnologias").show();
+    })
+
+    $("#btnModalVideo2").click(function () {
+      $("#videoTecnologias").attr("src","https://www.youtube.com/embed/StijcntAsLQ?autoplay=1&rel=0");
+      $("#modalTecnologias").show();
+    })
+
+    $("#closeModalTecnologias").click(function () {
+      $("#videoTecnologias").attr("src","");
+      $("#modalTecnologias").hide();
+    });
+
+    $(".modal").click(function (e) {
+      if (e.target === this) {
+        $("#videoTecnologias").attr("src","");
+        $(this).hide();
+      }
     });
 
     $(".card-servicos").click(function() {
@@ -312,15 +340,16 @@
       $('.slider-servicos').slick('unslick');
       $(".slider-servicos").empty();
 
-      for (var i = 0; i < data.galerias[id].fotos.length; i++) {
-
-        var foto = data.galerias[id].fotos[i];
+      var galeria = data.galerias[id];
+      for (var i = 0; i < galeria.fotos; i++) {
+        var indexPicture = i + 1;
 
         var item = "<div class='item'>"
                  + "  <div class='slider-img-wrapper'>"
-                 + "    <img src='" + foto.url + "'>"
+                 + "    <img src='content/" + galeria.pasta + "/" + indexPicture + ".jpg'>"
                  + "  </div>"
-                 + "  <h2>" + foto.legenda + "</h2>"
+                 + "  <h2>" + galeria.titulo + "</h2>"
+                 + "  <h3>" + galeria.local + "</h3>"
                  + "</div>";
 
         $(".slider-servicos").append(item);
@@ -333,47 +362,6 @@
     });
 
   });
-
-	var modal = document.getElementById('modalTecnologias');
-	var btnPinturaMecanizada = document.getElementById("btnModalMecanizada");
-	var btnIsentoDePo = document.getElementById("btnModalIsentoPo");
-	var fecharModal = document.getElementsByClassName("close")[0];
-
-	btnPinturaMecanizada.onclick = function() 
-	{
-		modal.style.display = "block";
-		$("#iframeVideo").attr("src","https://www.youtube.com/embed/2Rb-NAZ7VAY?autoplay=1&rel=0");
-	}
-
-	btnIsentoDePo.onclick = function() 
-	{
-		modal.style.display = "block";
-		$("#iframeVideo").attr("src","https://www.youtube.com/embed/StijcntAsLQ?autoplay=1&rel=0");
-	}
-
-	fecharModal.onclick = function() 
-	{
-		modal.style.display = "none";
-	}
-
-	window.onclick = function(event) 
-	{
-		if (event.target == modal) {
-			modal.style.display = "none";
-		}
-	}
-
-  function initSlick() {
-    $('.slider-servicos').slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      fade: true,
-      autoplay: true,
-      autoplaySpeed: 3000,    
-      cssEase: 'linear'
-    });
-  }
 
 </script>
 </body>

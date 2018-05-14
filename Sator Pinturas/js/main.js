@@ -1,16 +1,23 @@
 
-/*Método que faz com que o video pare quando a modal é fechada*/
-function stopVideo()
-{
-  $("#pinturaMecanizada").attr("src","");
-}
-
 /*Método que da um scroll até o elemento desejado
- @param element
+ @param elementDiv
 */
 function scrollToElement(elementDiv)
 {
-  jQuery("body,html").animate({
-        scrollTop: $(elementDiv).offset().top
+  $("body,html").animate({
+    scrollTop: $(elementDiv).offset().top
   }, 600);
+}
+
+
+function initSlick() {
+  $('.slider-servicos').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 3000,    
+    cssEase: 'linear'
+  });
 }
