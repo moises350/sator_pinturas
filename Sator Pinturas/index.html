@@ -5,6 +5,7 @@
     <title>Sator Pinturas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="pincel.ico" type="image/x-icon"/>
     <link href="css/lib/layout.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/lib/slick.css" rel="stylesheet" type="text/css"/>
     <link href="css/lib/slick-theme.css" rel="stylesheet" type="text/css"/>
@@ -72,13 +73,13 @@
         <li>
           <article>
             <h3 class="heading">Pinturas Mecanizadas</h3>
-            <footer><a class="btn btn-veja-mais animated" href="#">Veja Mais</a></footer>
+            <footer><a id="btnModalVideo3" class="btn btn-veja-mais animated" href="#">Veja Mais</a></footer>
           </article>
         </li>
         <li>
           <article>
             <h3 class="heading">Lixamento isento de pó</h3>
-            <footer><a class="btn btn-veja-mais animated" href="#">Clique para ver mais</a></footer>
+            <footer><a id="btnModalVideo4" class="btn btn-veja-mais animated" href="#">Clique para ver mais</a></footer>
           </article>
         </li>
       </ul>
@@ -237,6 +238,16 @@
     $("#btnModalVideo2").click(function () {
       $("#videoTecnologias").attr("src","https://www.youtube.com/embed/StijcntAsLQ?autoplay=1&rel=0");
       $("#modalTecnologias").fadeIn();
+    })
+      
+    $("#btnModalVideo3").click(function () {
+    $("#videoTecnologias").attr("src","https://www.youtube.com/embed/2Rb-NAZ7VAY?autoplay=1&rel=0");
+    $("#modalTecnologias").fadeIn();
+    })
+      
+    $("#btnModalVideo4").click(function () {
+    $("#videoTecnologias").attr("src","https://www.youtube.com/embed/StijcntAsLQ?autoplay=1&rel=0");
+    $("#modalTecnologias").fadeIn();
     })
 
     $("#closeModalTecnologias").click(function () {
