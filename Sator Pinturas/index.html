@@ -5,7 +5,7 @@
     <title>Sator Pinturas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="shortcut icon" href="pincel.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
     <link href="css/lib/layout.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/lib/slick.css" rel="stylesheet" type="text/css"/>
     <link href="css/lib/slick-theme.css" rel="stylesheet" type="text/css"/>
@@ -16,15 +16,15 @@
   <div class="wrapper row1">
     <header id="header" class="hoc clear">
       <div style="width: 40%; float: left; margin: 0px;" id="logo" class="fl_left">
-        <h1><a style="cursor: auto;"><img src="img/SatorLogo.png"/></a></h1>
+        <h1><a href="index.html"><img src="img/SatorLogo.png"/></a></h1>
       </div>
       <nav id="mainav" class="fl_right">
         <ul class="clear">
           <li><a class="animated" href="index.html">Home</a></li>
           <li><a class="drop animated" href="#">Serviços</a>
             <ul class="animated">
-              <li><a class="animated" id="btnModalVideo1">Pinturas Mecanizadas</a></li>
-              <li><a class="animated" id="btnModalVideo2">Lixamento isento de pó</a></li>
+              <li><a class="open-video-1 animated">Pinturas Mecanizadas</a></li>
+              <li><a class="open-video-2 animated" >Lixamento isento de pó</a></li>
             </ul>
           </li>
           <li><a class="animated" href="pages/gallery.html">Galeria</a></li>
@@ -73,13 +73,13 @@
         <li>
           <article>
             <h3 class="heading">Pinturas Mecanizadas</h3>
-            <footer><a id="btnModalVideo3" class="btn btn-veja-mais animated" href="#">Veja Mais</a></footer>
+            <footer><a class="open-video-1 btn btn-veja-mais animated" href="#">Veja Mais</a></footer>
           </article>
         </li>
         <li>
           <article>
             <h3 class="heading">Lixamento isento de pó</h3>
-            <footer><a id="btnModalVideo4" class="btn btn-veja-mais animated" href="#">Clique para ver mais</a></footer>
+            <footer><a class="open-video-2 btn btn-veja-mais animated" href="#">Clique para ver mais</a></footer>
           </article>
         </li>
       </ul>
@@ -230,26 +230,16 @@
       $("#modalGaleria").fadeOut();
     });
 
-    $("#btnModalVideo1").click(function () {
+    $(".open-video-1").click(function () {
       $("#videoTecnologias").attr("src","https://www.youtube.com/embed/2Rb-NAZ7VAY?autoplay=1&rel=0");
       $("#modalTecnologias").fadeIn();
     })
 
-    $("#btnModalVideo2").click(function () {
+    $(".open-video-2").click(function () {
       $("#videoTecnologias").attr("src","https://www.youtube.com/embed/StijcntAsLQ?autoplay=1&rel=0");
       $("#modalTecnologias").fadeIn();
     })
-      
-    $("#btnModalVideo3").click(function () {
-    $("#videoTecnologias").attr("src","https://www.youtube.com/embed/2Rb-NAZ7VAY?autoplay=1&rel=0");
-    $("#modalTecnologias").fadeIn();
-    })
-      
-    $("#btnModalVideo4").click(function () {
-    $("#videoTecnologias").attr("src","https://www.youtube.com/embed/StijcntAsLQ?autoplay=1&rel=0");
-    $("#modalTecnologias").fadeIn();
-    })
-
+    
     $("#closeModalTecnologias").click(function () {
       $("#videoTecnologias").attr("src","");
       $("#modalTecnologias").fadeOut();
