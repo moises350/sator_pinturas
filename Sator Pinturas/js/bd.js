@@ -1,25 +1,25 @@
 var data = {
 	"galerias": [
 		{
-			"titulo": "(?)",
-			"local": "(?)",
+			"titulo": "RESIDENCIAL OLIVEIRAS",
+			"local": "COSMÓPOLIS/SP",
 			"data": "10/05/2018",
 			"pasta": "2018-05-10",
-			"fotos": 5
+			"fotos": 6
 		},
 		{
-			"titulo": "(?)",
-			"local": "(?)",
+			"titulo": "RESIDÊNCIA",
+			"local": "ARTHUR NOGUEIRA/SP",
 			"data": "11/12/2017",
 			"pasta": "2017-12-11",
-			"fotos": 3
+			"fotos": 6
 		},
 		{
 			"titulo": "ACADEMIA TRIAX",
 			"local": "COSMÓPOLIS",
 			"data": "19/07/2017",
 			"pasta": "2017-07-19",
-			"fotos": 10
+			"fotos": 12
 		},
 		{
 			"titulo": "PARKING KIDS",
@@ -33,14 +33,7 @@ var data = {
 			"local": "HOLAMBRA",
 			"data": "26/09/2014",
 			"pasta": "2014-09-26",
-			"fotos": 2
-		},
-		{
-			"titulo": "TEMPLO (?)",
-			"local": "(?)",
-			"data": "21/12/2014",
-			"pasta": "2014-12-21",
-			"fotos": 8
+			"fotos": 12
 		},
 		{
 			"titulo": "CONDOMÍNIO MONTE CRISTO",
@@ -60,50 +53,22 @@ var data = {
 		/* -- ^ HOME ^ -- */
 
 		{
-			"titulo": "(?)",
-			"local": "(?)",
-			"data": "24/02/2018",
-			"pasta": "2018-02-24",
-			"fotos": 1
-		},
-		{
-			"titulo": "(?)",
-			"local": "(?)",
-			"data": "12/04/2017",
-			"pasta": "2017-04-12",
-			"fotos": 2
-		},
-		{
-			"titulo": "(?)",
-			"local": "(?)",
+			"titulo": "CONDOMÍNIO SAN MARINO",
+			"local": "ARTHUR NOGUEIRA/SP",
 			"data": "31/08/2016",
 			"pasta": "2016-08-31",
 			"fotos": 8
 		},
 		{
-			"titulo": "(?)",
-			"local": "(?)",
-			"data": "22/08/2015",
-			"pasta": "2015-08-22",
-			"fotos": 3
-		},
-		{
-			"titulo": "(?)",
-			"local": "(?)",
-			"data": "08/11/2014",
-			"pasta": "2014-11-08",
-			"fotos": 2
-		},
-		{
-			"titulo": "(?)",
-			"local": "(?)",
+			"titulo": "CONDOMÍNIO MONTE CRISTO",
+			"local": "COSMÓPOLIS/SP",
 			"data": "20/06/2014",
 			"pasta": "2014-06-20",
 			"fotos": 6
 		},
 		{
-			"titulo": "(?)",
-			"local": "(?)",
+			"titulo": "RESIDENCIAL",
+			"local": "COSMÓPOLIS/SP",
 			"data": "25/01/2014",
 			"pasta": "2014-01-25",
 			"fotos": 2
